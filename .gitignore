@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Raw datasets
+data/
+data/*
+
+# Trained model artifacts
+model/
+model/*
+*.pkl
+*.h5
