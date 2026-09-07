@@ -9,7 +9,7 @@ print("Loading dataset...")
 
 data = pd.read_csv(DATA_PATH)
 
-X = data[["area", "bedrooms", "age"]]
+X = data[["area", "bedrooms"]]
 y = data["price"]
 
 FIT_INTERCEPT = True
