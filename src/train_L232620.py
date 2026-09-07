@@ -12,7 +12,9 @@ data = pd.read_csv(DATA_PATH)
 X = data[["area", "bedrooms", "age"]]
 y = data["price"]
 
-model = LinearRegression()
+FIT_INTERCEPT = True
+
+model = LinearRegression(fit_intercept=FIT_INTERCEPT)
 model.fit(X, y)
 
 joblib.dump(model, MODEL_PATH)
