@@ -10,7 +10,7 @@ print("Loading dataset...")
 
 data = pd.read_csv(DATA_PATH)
 
-X = data[["area", "bedrooms", "age"]].copy()
+X = data[["area", "bedrooms"]]
 y = data["price"]
 
 scaler = StandardScaler()
